@@ -11,8 +11,8 @@
 
 /* ---- Base Rules ---- */
 body {
-    background: rgb(136,203,171);
-    background: linear-gradient(0deg, rgba(136,203,171,1) 0%, rgba(0,13,60,1) 100%);
+    background: rgb(191, 100, 243);
+    background: linear-gradient(0deg, rgb(179, 91, 76) 0%, rgb(117, 49, 114) 100%);
     margin: 0;
     font-family: 'Merriweather', serif;
     color: #fff;
@@ -73,7 +73,17 @@ section {
 .navbar__menu li {
     display: inline-block;
 }
-
+/*some separation from nav bar and pages*/
+.navbar__menu li::before {
+    content: "";
+    width: 100%;
+    height: 6px;
+    background-color: rgb(170 190 90);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    z-index: 8;
+}
 .navbar__menu .menu__link {
     display: block;
     padding: 1em;
@@ -82,6 +92,15 @@ section {
     color: #000;
 }
 
+/*to show difference in nav bar of what section you are currently at*/
+.active_button{
+    display: block;
+    background:#95ffd5;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffc100 !important;
+}
 .navbar__menu .menu__link:hover {
     background: #333;
     color: #fff;
@@ -142,6 +161,39 @@ section:nth-of-type(odd) .landing__container::before {
     border-radius: 50%;
     opacity: 0;
     transition: ease 0.5s all;
+}
+
+#return_top{
+    position: relative;
+    left: 89%;
+    bottom: 7%;
+    background-color: transparent;
+    width: 0 ;
+    height: 0;
+    border: 18px solid transparent;
+    border-bottom-color: rgb(250, 250, 250);
+    cursor: pointer;
+    animation-name: arrow-ping;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out; 
+    transition: ease 0.5s;
+}
+
+#return_top::before{
+    position: absolute;
+    content: "";
+    width: 0 ;
+    height: 0;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -30px);
+    border: 22px solid transparent;
+    border-bottom-color: #286e34;
+    cursor: pointer;
+
 }
 
 section:nth-of-type(even) .landing__container::before {
