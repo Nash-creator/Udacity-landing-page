@@ -1,9 +1,12 @@
-# Landing Page Project
+# Udacity Landing Page project
+This project showcases my ability to build Navigation Bar for a dynamic landing page.
+## Instructions 
+The starter file had HTML and CSS styling to display a static landing page. I mainly worked on the JS fucntionality to turn the static page into an interatice one. I also modified some of the HTML and CSS to add a personal flair.
+## Contributions
+These are a list of resources used to create this project.
+Udacity
+w3.org
+mdn Web Docs
 
-## Instructions
-
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
-
-To get started, open `js/app.js` and start building out the app's functionality
-
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+## License and Copyright
+© Udacity - Revisisons made by Kevinnash Prasad
